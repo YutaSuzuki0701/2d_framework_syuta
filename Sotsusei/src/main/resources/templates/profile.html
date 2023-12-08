@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>User Dashboard</h2>
+
+    <!-- 名前変更フォーム -->
+    <div class="section">
+      <h3>名前変更</h3>
+      <form action="/update_name" method="post">
+        <label for="newName">新しい名前:</label>
+        <input type="text" id="newName" name="newName" required>
+        <button type="submit">変更</button>
+      </form>
+    </div>
+
+    <!-- 出品履歴 -->
+    <div class="section">
+      <h3>出品履歴</h3>
+      <!-- 出品履歴の表示コード -->
+    </div>
+
+    <!-- 購入履歴 -->
+    <div class="section">
+      <h3>購入履歴</h3>
+      <!-- 購入履歴の表示コード -->
+    </div>
+
+    <!-- ログアウトボタン -->
+    <div class="section">
+      <form action="/logout" method="post">
+        <button type="submit">ログアウト</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
